@@ -16,7 +16,7 @@ Coming soon...
 ## Built with
 
 * [JavaFX](https://en.wikipedia.org/wiki/JavaFX) 
-* [JFonix](http://www.jfoenix.com/) - JavaFx Material Design Library
+* [JFoenix](http://www.jfoenix.com/) - JavaFx Material Design Library
 
 ## UI Screens
 
