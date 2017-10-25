@@ -9,6 +9,10 @@ It also represents a framework for developing said games.
 
 ## Releases
 
+## Games
+
+* [Tic-Tac-Toe](https://github.com/evox94/TicTacToeBotfights)
+
 ## Documentation
 
 Coming soon...
