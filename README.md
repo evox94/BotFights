@@ -7,7 +7,16 @@ It also represents a framework for developing said games.
 
 "Botfights" was developed in Java and uses JavaFX as a graphics framework.
 
-## Releases
+## Curent release
+[v0.9-beta](https://github.com/evox94/BotFights/releases/tag/v0.9-beta) Botfights.zip is the runtime image bundled with [Tic-Tac-Toe](https://github.com/evox94/TicTacToeBotfights)
+
+Unzip and run launch.bat
+
+Linux version coming soon.
+
+## Games
+
+* [Tic-Tac-Toe](https://github.com/evox94/TicTacToeBotfights)
 
 ## Documentation
 
@@ -15,6 +24,7 @@ Coming soon...
 
 ## Built with
 
+* [Java 9](http://openjdk.java.net/projects/jdk9/)
 * [JavaFX](https://en.wikipedia.org/wiki/JavaFX) 
 * [JFoenix](http://www.jfoenix.com/) - JavaFx Material Design Library
 
