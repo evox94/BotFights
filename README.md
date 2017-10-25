@@ -28,7 +28,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Author
 
-Smiljan Djuric (Evox94)
+Smiljan Djuric ([@evox94](https://github.com/evox94))
 
 ## Other
 
