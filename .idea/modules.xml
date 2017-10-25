@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BotFights.iml" filepath="$PROJECT_DIR$/BotFights.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rs.etf.stud.botfights.core/rs.etf.stud.botfights.core.iml" filepath="$PROJECT_DIR$/rs.etf.stud.botfights.core/rs.etf.stud.botfights.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rs.etf.stud.botfights.extend/rs.etf.stud.botfights.extend.iml" filepath="$PROJECT_DIR$/rs.etf.stud.botfights.extend/rs.etf.stud.botfights.extend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rs.etf.stud.botfights.extend.java/rs.etf.stud.botfights.extend.java.iml" filepath="$PROJECT_DIR$/rs.etf.stud.botfights.extend.java/rs.etf.stud.botfights.extend.java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rs.etf.stud.botfights.javaprocrunner/rs.etf.stud.botfights.javaprocrunner.iml" filepath="$PROJECT_DIR$/rs.etf.stud.botfights.javaprocrunner/rs.etf.stud.botfights.javaprocrunner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rs.etf.stud.botfights.main/rs.etf.stud.botfights.main.iml" filepath="$PROJECT_DIR$/rs.etf.stud.botfights.main/rs.etf.stud.botfights.main.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.web.WebView?>
+<?import com.jfoenix.controls.JFXRippler?>
+<?import javafx.scene.layout.StackPane?>
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1"
+           stylesheets="@../css/botfights.css" fx:controller="rs.etf.stud.botfights.main.controllers.MainController">
+    <GridPane hgap="5.0"  vgap="5.0">
+        <columnConstraints>
+            <ColumnConstraints minWidth="270.0" maxWidth="270.0"/>
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity"/>
+            <ColumnConstraints minWidth="270.0" maxWidth="500.0" hgrow="ALWAYS"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="NEVER"/>
+            <RowConstraints maxHeight="Infinity" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="80.0" minHeight="80.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="ALWAYS"/>
+            <RowConstraints vgrow="NEVER"/>
+        </rowConstraints>
+        <MenuBar GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="0" GridPane.rowSpan="1">
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem mnemonicParsing="false" text="Close" onAction="#kill"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+                <MenuItem mnemonicParsing="false" text="Clear console" onAction="#clearConsole"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <MenuItem mnemonicParsing="false" text="About" onAction="#about"/>
+            </Menu>
+        </MenuBar>
+        <JFXListView fx:id="gamesListView" GridPane.columnIndex="0" GridPane.columnSpan="1"
+                     GridPane.rowIndex="1" GridPane.rowSpan="1" styleClass="border-segment">
+            <GridPane.margin>
+                <Insets left="5.0"/>
+            </GridPane.margin>
+        </JFXListView>
+        <StackPane fx:id="webViewParent" GridPane.columnIndex="1" GridPane.columnSpan="1" GridPane.rowIndex="1"
+                   GridPane.rowSpan="2">
+            <WebView fx:id="webView" />
+        </StackPane>
+
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" GridPane.columnIndex="2" GridPane.columnSpan="1"
+                    GridPane.rowIndex="1" GridPane.rowSpan="1" styleClass="border-segment">
+            <VBox spacing="10">
+                <HBox alignment="BASELINE_LEFT">
+                    <Label text="Player Manager" styleClass="label-heading"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <JFXButton text="+" fx:id="addPlayerBtn" styleClass="player-button" disable="true"/>
+                    <JFXButton text="-" fx:id="removePlayerBtn" styleClass="player-button" disable="true"/>
+                    <Region HBox.hgrow="SOMETIMES" minWidth="10" maxWidth="50"/>
+                </HBox>
+                <VBox fx:id="playerVBoxContainer" spacing="25.0">
+                </VBox>
+                <padding>
+                    <Insets bottom="3" left="5" right="5" top="3"/>
+                </padding>
+            </VBox>
+            <GridPane.margin>
+                <Insets right="5.0"/>
+            </GridPane.margin>
+        </ScrollPane>
+        <VBox GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1" styleClass="border-segment">
+            <Label text="Templates" styleClass="templates-label"/>
+            <Region VBox.vgrow="ALWAYS"/>
+            <HBox>
+                <JFXComboBox fx:id="templateComboBox" promptText="Language" prefWidth="150"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <JFXRippler maskType="FIT" style="-fx-rippler-fill:red;">
+                    <JFXButton fx:id="downloadTemplateBtn" text="Download"/>
+                </JFXRippler>
+            </HBox>
+            <GridPane.margin>
+                <Insets left="5.0"/>
+            </GridPane.margin>
+            <padding>
+                <Insets left="10" right="10" bottom="10"/>
+            </padding>
+        </VBox>
+        <GridPane alignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2"
+                  GridPane.rowSpan="1">
+            <JFXButton fx:id="launchBtn" prefHeight="100.0" prefWidth="300.0" text="LAUNCH"
+                       styleClass="custom-jfx-button-raised"
+                       disable="true"/>
+            <padding>
+                <Insets right="5"/>
+            </padding>
+        </GridPane>
+        <TextArea fx:id="textArea" editable="false" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="3"
+                  GridPane.rowSpan="1">
+            <GridPane.margin>
+                <Insets left="5.0" right="5.0"/>
+            </GridPane.margin>
+        </TextArea>
+        <HBox alignment="TOP_RIGHT" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="4"
+              GridPane.rowSpan="1">
+            <padding>
+                <Insets right="2"/>
+            </padding>
+            <Label text="Ready"/>
+        </HBox>
+    </GridPane>
+</StackPane>
+

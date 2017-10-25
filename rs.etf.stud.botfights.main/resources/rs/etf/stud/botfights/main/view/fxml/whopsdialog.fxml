@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXDialog?>
+<?import com.jfoenix.controls.JFXDialogLayout?>
+<?import com.jfoenix.controls.JFXButton?>
+<JFXDialog fx:id="dialog" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rs.etf.stud.botfights.main.controllers.DialogController">
+    <JFXDialogLayout>
+        <heading>
+            <Label>Whoops!</Label>
+        </heading>
+        <body>
+            <Label>Something went wrong. More output is available in the consoles.
+                Sorry!
+            </Label>
+        </body>
+        <actions>
+            <JFXButton fx:id="acceptButton" styleClass="dialog-ok" text="OK">
+            </JFXButton>
+        </actions>
+    </JFXDialogLayout>
+</JFXDialog>
